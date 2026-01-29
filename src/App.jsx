@@ -5,7 +5,7 @@ const RSVP_ENDPOINT =
 
 const initialForm = {
   fullName: "",
-  attending: "yes",
+  attending: "",
   guestCount: "1",
   dietaryNotes: ""
 };
@@ -83,6 +83,16 @@ export default function App() {
           </button>
           <section className="mt-8 w-full rounded-[18px] bg-[#fff3e7] px-7 py-6 text-left font-sans">
             <h2 className="mb-4 text-sm uppercase tracking-[0.12em] text-[#7b4e3a]">
+              The Vibe
+            </h2>
+            <p className="text-base text-[#2d2520]">
+              This celebration is all about our love of seals and other animals.
+              Expect a playful, cozy day filled with marine-inspired touches,
+              animal stories, and plenty of warmth.
+            </p>
+          </section>
+          <section className="mt-8 w-full rounded-[18px] bg-[#fff3e7] px-7 py-6 text-left font-sans">
+            <h2 className="mb-4 text-sm uppercase tracking-[0.12em] text-[#7b4e3a]">
               The Day
             </h2>
             <ul className="grid gap-3 text-base text-[#2d2520]">
@@ -99,6 +109,24 @@ export default function App() {
                 Hang out, then camping + grilling into the evening
               </li>
             </ul>
+          </section>
+          <section className="mt-6 w-full rounded-[18px] bg-[#fff3e7] px-7 py-6 text-left font-sans">
+            <h2 className="mb-3 text-sm uppercase tracking-[0.12em] text-[#7b4e3a]">
+              Gifts
+            </h2>
+            <p className="text-base text-[#2d2520]">
+              In lieu of gifts, please make a donation to the Center for New
+              Americans at{" "}
+              <a
+                href="https://cnam.org/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold text-[#7b4e3a] underline underline-offset-4"
+              >
+                cnam.org
+              </a>
+              .
+            </p>
           </section>
           <p className="text-sm text-[#6a5a50]">More details coming soon.</p>
         </main>
@@ -138,8 +166,17 @@ export default function App() {
                 onChange={handleChange}
                 className="rounded-[14px] border border-[#d9c9b8] bg-[#fffdf9] px-4 py-3 text-base"
               >
-                <option value="yes">Yes, can’t wait!</option>
-                <option value="no">Sadly, no</option>
+                <option value="" disabled>
+                  Select an option
+                </option>
+                <option value="ceremony-lunch">
+                  Yes, ceremony & lunch only.
+                </option>
+                <option value="evening-only">
+                  Yes, evening party only.
+                </option>
+                <option value="both">Yes, we’ll be there for both!</option>
+                <option value="no">Sadly, we can’t make it.</option>
               </select>
             </label>
             <label className="grid gap-2 text-sm">
