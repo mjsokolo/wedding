@@ -63,6 +63,43 @@
   color: #6a5a50;
 }
 
+.schedule {
+  margin: 2.5rem auto 0;
+  text-align: left;
+  background: #fff3e7;
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.schedule ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.schedule li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  font-size: 1rem;
+}
+
+.schedule strong {
+  min-width: 90px;
+  font-weight: 600;
+}
+
+.section-title {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #7b4e3a;
+}
+
 .back-link {
   border: none;
   background: none;

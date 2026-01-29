@@ -5,7 +5,6 @@ const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbzcD-ZUIME7fG0Df1
 
 const initialForm = {
   fullName: "",
-  email: "",
   attending: "yes",
   guestCount: "1",
   dietaryNotes: ""
@@ -18,6 +17,17 @@ export default function App() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    if (name === "guestCount") {
+      const cleaned = value.replace(/[^\d]/g, "");
+      if (cleaned === "") {
+        setForm((prev) => ({ ...prev, [name]: "" }));
+        return;
+      }
+      const numericValue = Number.parseInt(cleaned, 10);
+      const clamped = Math.min(Math.max(numericValue, 1), 4);
+      setForm((prev) => ({ ...prev, [name]: String(clamped) }));
+      return;
+    }
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -58,16 +68,30 @@ export default function App() {
         <main className="hero">
           <p className="eyebrow">Save the Date</p>
           <h1 className="title">Lilly & Michael</h1>
-          <p className="subtitle">August 22, 2026 • Sheburne Falls, MA</p>
-          <button
-            className="rsvp-button"
-            type="button"
-            onClick={() => setView("rsvp")}
-          >
-            RSVP
-          </button>
-          <p className="note">More details coming soon.</p>
-        </main>
+        <p className="subtitle">August 22, 2026 • Sheburne Falls, MA</p>
+        <button
+          className="rsvp-button"
+          type="button"
+          onClick={() => setView("rsvp")}
+        >
+          RSVP
+        </button>
+        <section className="schedule">
+          <h2 className="section-title">The Day</h2>
+          <ul>
+            <li>
+              <strong>2:00 PM</strong> Ceremony
+            </li>
+            <li>
+              <strong>3:00 PM</strong> Food & toasts
+            </li>
+            <li>
+              <strong>After</strong> Hang out, then camping + grilling into the evening
+            </li>
+          </ul>
+        </section>
+        <p className="note">More details coming soon.</p>
+      </main>
       ) : (
         <main className="hero rsvp">
           <button className="back-link" type="button" onClick={() => setView("landing")}>
@@ -81,19 +105,8 @@ export default function App() {
               <input
                 name="fullName"
                 type="text"
-                placeholder="Jordan Lee"
+                placeholder="Robert Francis Prevost"
                 value={form.fullName}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label className="field">
-              <span>Email</span>
-              <input
-                name="email"
-                type="email"
-                placeholder="jordan@email.com"
-                value={form.email}
                 onChange={handleChange}
                 required
               />
@@ -116,6 +129,9 @@ export default function App() {
                 type="number"
                 min="1"
                 max="6"
+                inputMode="numeric"
+                pattern="\\d*"
+                step="1"
                 value={form.guestCount}
                 onChange={handleChange}
                 required
