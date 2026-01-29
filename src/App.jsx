@@ -7,7 +7,9 @@ const initialForm = {
   fullName: "",
   attending: "",
   guestCount: "1",
-  dietaryNotes: ""
+  dietaryNotes: "",
+  website: "",
+  startedAt: ""
 };
 
 export default function App() {
@@ -36,6 +38,15 @@ export default function App() {
     setStatus({ state: "loading", message: "" });
 
     try {
+      const startedAt = Number.parseInt(form.startedAt, 10);
+      const now = Date.now();
+      if (Number.isNaN(startedAt) || now - startedAt < 2500) {
+        throw new Error("Please wait a moment and try again.");
+      }
+      if (form.website) {
+        throw new Error("Unable to submit. Please try again.");
+      }
+
       if (RSVP_ENDPOINT.startsWith("PASTE_")) {
         throw new Error("Set your Apps Script Web App URL first.");
       }
@@ -145,7 +156,16 @@ export default function App() {
           <h2 className="font-serif text-[clamp(2rem,4vw,3rem)]">
             We can’t wait to celebrate with you.
           </h2>
-          <form className="mt-8 grid gap-5 font-sans" onSubmit={handleSubmit}>
+          <form
+            className="mt-8 grid gap-5 font-sans"
+            onSubmit={handleSubmit}
+            onFocus={() =>
+              setForm((prev) => ({
+                ...prev,
+                startedAt: prev.startedAt || String(Date.now())
+              }))
+            }
+          >
             <label className="grid gap-2 text-sm">
               <span>Full name</span>
               <input
@@ -206,6 +226,20 @@ export default function App() {
                 className="resize-y rounded-[14px] border border-[#d9c9b8] bg-[#fffdf9] px-4 py-3 text-base"
               />
             </label>
+            <div className="sr-only" aria-hidden="true">
+              <label>
+                Leave this field blank
+                <input
+                  type="text"
+                  name="website"
+                  value={form.website}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </label>
+            </div>
+            <input type="hidden" name="startedAt" value={form.startedAt} />
             <button
               className="rounded-full bg-[#7b4e3a] px-10 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(123,78,58,0.35)] transition hover:-translate-y-0.5 focus-visible:-translate-y-0.5"
               type="submit"
