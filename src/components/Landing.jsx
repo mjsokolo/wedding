@@ -26,9 +26,8 @@ export default function Landing({ active, onNavigate, onRsvpClick }) {
           The Vibe
         </h2>
         <p className="text-base text-[#2d2520]">
-          This celebration is all about our love of seals and other animals.
-          Expect a playful, cozy day filled with marine-inspired touches, animal
-          stories, and plenty of warmth.
+          We live set back in the woods and the wedding will be outdoors. 
+          Please come prepared and dressed like you're going on a hike that also has a wedding component to it (good luck).
         </p>
       </section>
       <section className="mt-4 w-full rounded-[18px] bg-[#fff3e7] px-6 py-5 text-left font-sans">
@@ -37,20 +36,20 @@ export default function Landing({ active, onNavigate, onRsvpClick }) {
         </h2>
         <ul className="grid gap-3 text-base text-[#2d2520]">
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">2:00 PM</strong>
+            <strong className="min-w-[90px] font-semibold">Afternoon</strong>
             Ceremony
           </li>
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">3:00 PM</strong>
-            Food & toasts
+            <strong className="min-w-[90px] font-semibold">After</strong>
+            Food & Drinks
           </li>
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">After</strong>
+            <strong className="min-w-[90px] font-semibold">Late</strong>
             Hang out, then camping + grilling into the evening
           </li>
         </ul>
       </section>
-      <section className="mt-4 w-full rounded-[18px] bg-[#fff3e7] px-6 py-5 text-left font-sans">
+      {/* <section className="mt-4 w-full rounded-[18px] bg-[#fff3e7] px-6 py-5 text-left font-sans">
         <h2 className="mb-3 text-sm uppercase tracking-[0.12em] text-[#7b4e3a]">
           Gifts
         </h2>
@@ -67,7 +66,7 @@ export default function Landing({ active, onNavigate, onRsvpClick }) {
           </a>
           .
         </p>
-      </section>
+      </section> */}
       <p className="text-sm text-[#6a5a50]">More details coming soon.</p>
     </main>
   );

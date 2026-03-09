@@ -9,6 +9,7 @@ const RSVP_ENDPOINT =
 const initialForm = {
   fullName: "",
   attending: "",
+  camping: "",
   guestCount: "1",
   dietaryNotes: "",
   website: "",
@@ -22,17 +23,6 @@ export default function App() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    if (name === "guestCount") {
-      const cleaned = value.replace(/[^\d]/g, "");
-      if (cleaned === "") {
-        setForm((prev) => ({ ...prev, [name]: "" }));
-        return;
-      }
-      const numericValue = Number.parseInt(cleaned, 10);
-      const clamped = Math.min(Math.max(numericValue, 1), 4);
-      setForm((prev) => ({ ...prev, [name]: String(clamped) }));
-      return;
-    }
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 

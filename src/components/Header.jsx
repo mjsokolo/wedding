@@ -16,15 +16,15 @@ export default function Header({
           Home
         </button>
         <span className="text-[#c9b9a8]">•</span>
-        <button
+        {/* <button
           className="underline underline-offset-4"
           type="button"
           onClick={() => onNavigate("directions")}
           aria-current={active === "directions" ? "page" : undefined}
         >
           Directions
-        </button>
-        <span className="text-[#c9b9a8]">•</span>
+        </button> */}
+        {/* <span className="text-[#c9b9a8]">•</span>
         <button
           className="underline underline-offset-4"
           type="button"
@@ -33,8 +33,8 @@ export default function Header({
         >
           Gifts
         </button>
-        <span className="text-[#c9b9a8]">•</span>
-        <button
+        <span className="text-[#c9b9a8]">•</span> */}
+        {/* <button
           className="underline underline-offset-4"
           type="button"
           onClick={() => onNavigate("parking")}
@@ -42,7 +42,7 @@ export default function Header({
         >
           Parking
         </button>
-        <span className="text-[#c9b9a8]">•</span>
+        <span className="text-[#c9b9a8]">•</span> */}
         <button
           className="underline underline-offset-4"
           type="button"

@@ -53,20 +53,37 @@ export default function RsvpForm({
           </select>
         </label>
         <label className="grid gap-2 text-sm">
+          <span>Will you be camping?</span>
+          <select
+            name="camping"
+            value={form.camping}
+            onChange={onChange}
+            className="rounded-[14px] border border-[#d9c9b8] bg-[#fffdf9] px-4 py-3 text-base"
+            required
+          >
+            <option value="" disabled>
+              Select an option
+            </option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="maybe">Maybe</option>
+          </select>
+        </label>
+        <label className="grid gap-2 text-sm">
           <span>Guest count</span>
-          <input
+          <select
             name="guestCount"
-            type="number"
-            min="1"
-            max="4"
-            inputMode="numeric"
-            pattern="\\d*"
-            step="1"
             value={form.guestCount}
             onChange={onChange}
             required
             className="rounded-[14px] border border-[#d9c9b8] bg-[#fffdf9] px-4 py-3 text-base"
-          />
+          >
+            <option value="" disabled>
+              Select number of guests
+            </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
         </label>
         <label className="grid gap-2 text-sm">
           <span>Dietary notes (optional)</span>
