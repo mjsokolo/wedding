@@ -6,7 +6,7 @@ export default function Header({
 }) {
   return (
     <header className="flex flex-col items-center gap-4 text-center">
-      <nav className="flex flex-wrap items-center justify-center gap-3 font-sans text-sm text-[#7b4e3a]">
+      <nav className="flex flex-wrap items-center justify-center gap-3 font-sans text-sm text-[#4b5f41]">
         <button
           className="underline underline-offset-4"
           type="button"
@@ -15,7 +15,7 @@ export default function Header({
         >
           Home
         </button>
-        <span className="text-[#c9b9a8]">•</span>
+        <span className="text-[#c4a54a]">•</span>
         {/* <button
           className="underline underline-offset-4"
           type="button"

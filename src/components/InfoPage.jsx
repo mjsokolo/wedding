@@ -2,7 +2,7 @@ import Header from "./Header.jsx";
 
 export default function InfoPage({ title, children, onNavigate, onRsvpClick, active }) {
   return (
-    <main className="mx-auto w-full max-w-3xl rounded-[24px] bg-[#fff9f2] px-6 py-14 text-left shadow-[0_20px_60px_rgba(62,45,35,0.15)] sm:px-10">
+    <main className="mx-auto w-full max-w-3xl rounded-[24px] bg-[#f5f1e6] px-6 py-14 text-left shadow-[0_20px_60px_rgba(44,53,35,0.2)] sm:px-10">
       <Header
         active={active}
         onNavigate={onNavigate}
