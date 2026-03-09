@@ -4,6 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[radial-gradient(circle_at_top,_#fff6ed,_#efe4d6)] text-[#2d2520];
+    @apply text-[#2d2520];
+    min-height: 100dvh;
   }
 }
