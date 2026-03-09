@@ -12,7 +12,7 @@ export default function Landing({ active, onNavigate, onRsvpClick }) {
         Lilly & Michael
       </h1>
       <p className="font-sans text-lg text-[#4f5b49]">
-        August 22, 2026 • Sheburne Falls, MA
+        August 29, 2026 • Sheburne Falls, MA
       </p>
       <button
         className="mt-2 rounded-full bg-[#4b5f41] px-10 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#f7f3e8] shadow-[0_12px_24px_rgba(43,58,38,0.35)] transition hover:-translate-y-0.5 focus-visible:-translate-y-0.5"
