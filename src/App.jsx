@@ -11,7 +11,8 @@ const initialForm = {
   fullName: "",
   attending: "",
   camping: "",
-  guestCount: "1",
+  hasGuests: "",
+  guestName: "",
   dietaryNotes: "",
   website: "",
   startedAt: ""
@@ -85,7 +86,7 @@ export default function App() {
         aria-hidden="true"
         className="fixed inset-0 -z-10"
         style={{
-          backgroundImage: `linear-gradient(rgba(247, 243, 232, 0.74), rgba(220, 214, 196, 0.74)), url(${backgroundImage})`,
+          backgroundImage: `linear-gradient(rgba(247, 243, 232, 0.0), rgba(220, 214, 196, 0.56)), url(${backgroundImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"

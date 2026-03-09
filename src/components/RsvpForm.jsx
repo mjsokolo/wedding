@@ -53,6 +53,37 @@ export default function RsvpForm({
           </select>
         </label>
         <label className="grid gap-2 text-sm">
+          <span>Will anyone be attending with you?</span>
+          <select
+            name="hasGuests"
+            value={form.hasGuests}
+            onChange={onChange}
+            required
+            className="rounded-[14px] border border-[#b7b49f] bg-[#fbf8ef] px-4 py-3 text-base"
+          >
+            <option value="" disabled>
+              Select an option
+            </option>
+            <option value="no">No, just me</option>
+            <option value="yes">Yes, one or more guests will join me</option>
+          </select>
+          <p className="text-xs leading-relaxed text-[#5e6855]">
+            If your invitation included additional guest(s), please select
+            "Yes" and list each guest&apos;s name below.
+          </p>
+        </label>
+        <label className="grid gap-2 text-sm">
+          <span>Guest name(s) (if attending with you)</span>
+          <input
+            name="guestName"
+            type="text"
+            placeholder="Guest full name(s)"
+            value={form.guestName}
+            onChange={onChange}
+            className="rounded-[14px] border border-[#b7b49f] bg-[#fbf8ef] px-4 py-3 text-base"
+          />
+        </label>
+        <label className="grid gap-2 text-sm">
           <span>Will you be camping?</span>
           <select
             name="camping"
@@ -67,22 +98,6 @@ export default function RsvpForm({
             <option value="yes">Yes</option>
             <option value="no">No</option>
             <option value="maybe">Maybe</option>
-          </select>
-        </label>
-        <label className="grid gap-2 text-sm">
-          <span>Guest count</span>
-          <select
-            name="guestCount"
-            value={form.guestCount}
-            onChange={onChange}
-            required
-            className="rounded-[14px] border border-[#b7b49f] bg-[#fbf8ef] px-4 py-3 text-base"
-          >
-            <option value="" disabled>
-              Select number of guests
-            </option>
-            <option value="1">1</option>
-            <option value="2">2</option>
           </select>
         </label>
         <label className="grid gap-2 text-sm">
