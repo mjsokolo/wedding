@@ -68,8 +68,8 @@ export default function RsvpForm({
             <option value="yes">Yes, one or more guests will join me</option>
           </select>
           <p className="text-xs leading-relaxed text-[#5e6855]">
-            If your invitation includes additional guest(s), please select
-            "Yes" and list each guest&apos;s name below.
+            If you&apos;re attending with a partner, children, or a guest,
+            please select &ldquo;Yes&rdquo; and list each person&apos;s name below.
           </p>
         </label>
         <label className="grid gap-2 text-sm">

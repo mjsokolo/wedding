@@ -36,16 +36,16 @@ export default function Landing({ active, onNavigate, onRsvpClick }) {
         </h2>
         <ul className="grid gap-3 text-base text-[#2d2520]">
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">Noon</strong>
+            <strong className="min-w-[90px] font-semibold">Afternoon</strong>
             Ceremony
           </li>
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">After</strong>
+            <strong className="min-w-[90px] font-semibold">Evening</strong>
             Food & Drinks
           </li>
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">Late</strong>
-            Hang out, then camping + grilling into the evening
+            <strong className="min-w-[90px] font-semibold">Night</strong>
+            Hang out, grilling, music, and camping for those who wish to stay the night
           </li>
         </ul>
       </section>
