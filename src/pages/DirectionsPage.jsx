@@ -1,6 +1,6 @@
 import InfoPage from "../components/InfoPage.jsx";
 import WeddingMap from "../components/WeddingMap.jsx";
-import detourMap from "../assets/detour-map.jpg";
+import detourMap from "../assets/detour-map.webp";
 
 export default function DirectionsPage() {
   return (

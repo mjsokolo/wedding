@@ -1,6 +1,6 @@
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import weddingMap from "../assets/wedding-map.png";
+import weddingMap from "../assets/wedding-map.webp";
 
 const PINS = [
   {
