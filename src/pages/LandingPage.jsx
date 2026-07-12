@@ -37,13 +37,17 @@ export default function LandingPage() {
             Ceremony
           </li>
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">~2:30pm</strong>
+            <strong className="min-w-[90px] font-semibold">2:30pm</strong>
             Food & Drinks
           </li>
           <li className="flex items-baseline gap-3">
-            <strong className="min-w-[90px] font-semibold">Night</strong>
-            Hang out, grilling, music, and camping for those who wish to stay
+            <strong className="min-w-[90px] font-semibold">Afterwards</strong>
+            Hang out, Music, and Lawn Games
             the night
+          </li>
+          <li className="flex items-baseline gap-3">
+            <strong className="min-w-[90px] font-semibold">6pm</strong>
+            Grilling, Chilling, and Camping
           </li>
         </ul>
       </section>
