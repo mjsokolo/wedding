@@ -5,9 +5,9 @@ export default {
     extend: {
       fontFamily: {
         serif: ["Playfair Display", "Times New Roman", "serif"],
-        sans: ["Montserrat", "Arial", "sans-serif"]
-      }
-    }
+        sans: ["Montserrat", "Arial", "sans-serif"],
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };

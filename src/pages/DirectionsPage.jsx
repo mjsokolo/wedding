@@ -9,10 +9,10 @@ export default function DirectionsPage() {
         <section>
           <h3 className="font-serif text-xl">Getting There</h3>
           <p className="mt-2">
-            The wedding will take place at our home at <b>241 Barnard Road, 
-            Shelburne Falls, MA 01370</b>. After driving on Rte 2 West,
-            you&apos;ll need to follow the detour signs to make the proper
-            turn to avoid getting stuck behind the bridge repairs.
+            The wedding will take place at our home at{" "}
+            <b>241 Barnard Road, Shelburne Falls, MA 01370</b>. After driving on
+            Rte 2 West, you&apos;ll need to follow the detour signs to make the
+            proper turn to avoid getting stuck behind the bridge repairs.
             Here&apos;s a map you can follow:
           </p>
           <img
@@ -24,13 +24,13 @@ export default function DirectionsPage() {
         <section>
           <h3 className="font-serif text-xl">Parking</h3>
           <p className="mt-2">
-            Our home is located on the right side of the road down a long
-            gravel driveway. Park along the left side of the road opposite
-            our home (there will be signs showing you where) and then walk
-            on driveway to our home. The walk from parking to the ceremony
-            is about 1,000 feet, down and up a hill. If that&apos;s more
-            than you&apos;d like to tackle, just let us know! We can
-            arrange to have you pull in and we can re-park your car.
+            Our home is located on the right side of the road down a long gravel
+            driveway. Park along the left side of the road opposite our home
+            (there will be signs showing you where) and then walk on driveway to
+            our home. The walk from parking to the ceremony is about 1,000 feet,
+            down and up a hill. If that&apos;s more than you&apos;d like to
+            tackle, just let us know! We can arrange to have you pull in and we
+            can re-park your car.
           </p>
           <WeddingMap />
         </section>

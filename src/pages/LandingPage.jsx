@@ -22,8 +22,9 @@ export default function LandingPage() {
           The Vibe
         </h2>
         <p className="text-base text-[#2d2520]">
-          We live set back in the woods and the wedding will be outdoors.
-          Please come prepared and dressed like you're going on a hike that also has a wedding component to it (good luck).
+          We live set back in the woods and the wedding will be outdoors. Please
+          come prepared and dressed like you're going on a hike that also has a
+          wedding component to it (good luck).
         </p>
       </section>
       <section className="mt-4 w-full rounded-[18px] bg-[#ece7d6] px-6 py-5 text-left font-sans">
@@ -41,7 +42,8 @@ export default function LandingPage() {
           </li>
           <li className="flex items-baseline gap-3">
             <strong className="min-w-[90px] font-semibold">Night</strong>
-            Hang out, grilling, music, and camping for those who wish to stay the night
+            Hang out, grilling, music, and camping for those who wish to stay
+            the night
           </li>
         </ul>
       </section>

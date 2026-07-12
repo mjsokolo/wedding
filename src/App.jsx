@@ -16,7 +16,7 @@ export default function App() {
           backgroundImage: `linear-gradient(rgba(247, 243, 232, 0.0), rgba(220, 214, 196, 0.56)), url(${backgroundImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       />
       <div className="min-h-screen px-6 py-12 text-[#2d2520]">

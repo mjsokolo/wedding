@@ -12,7 +12,7 @@ const initialForm = {
   guestName: "",
   dietaryNotes: "",
   website: "",
-  startedAt: ""
+  startedAt: "",
 };
 
 export default function RsvpPage() {
@@ -27,7 +27,7 @@ export default function RsvpPage() {
   const handleStart = () => {
     setForm((prev) => ({
       ...prev,
-      startedAt: prev.startedAt || String(Date.now())
+      startedAt: prev.startedAt || String(Date.now()),
     }));
   };
 
@@ -54,18 +54,19 @@ export default function RsvpPage() {
       await fetch(RSVP_ENDPOINT, {
         method: "POST",
         mode: "no-cors",
-        body: payload
+        body: payload,
       });
 
       setStatus({
         state: "success",
-        message: "Thanks! Your RSVP has been received."
+        message: "Thanks! Your RSVP has been received.",
       });
       setForm(initialForm);
     } catch (error) {
       setStatus({
         state: "error",
-        message: error instanceof Error ? error.message : "Something went wrong."
+        message:
+          error instanceof Error ? error.message : "Something went wrong.",
       });
     }
   };
@@ -76,7 +77,11 @@ export default function RsvpPage() {
       <h2 className="mt-4 font-serif text-[clamp(2rem,4vw,3rem)]">
         We can’t wait to celebrate with you.
       </h2>
-      <form className="mt-8 grid gap-5 font-sans" onSubmit={handleSubmit} onFocus={handleStart}>
+      <form
+        className="mt-8 grid gap-5 font-sans"
+        onSubmit={handleSubmit}
+        onFocus={handleStart}
+      >
         <label className="grid gap-2 text-sm">
           <span>Full name</span>
           <input
@@ -124,7 +129,8 @@ export default function RsvpPage() {
           </select>
           <p className="text-xs leading-relaxed text-[#5e6855]">
             If you&apos;re attending with a partner, children, or a guest,
-            please select &ldquo;Yes&rdquo; and list each person&apos;s name below.
+            please select &ldquo;Yes&rdquo; and list each person&apos;s name
+            below.
           </p>
         </label>
         <label className="grid gap-2 text-sm">

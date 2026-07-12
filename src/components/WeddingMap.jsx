@@ -8,43 +8,44 @@ const PINS = [
     x: 22,
     y: 50,
     label: "Reception Tent",
-    description: "Gather here after the ceremony for the reception"
+    description: "Gather here after the ceremony for the reception",
   },
   {
     id: "parking-area",
     x: 63,
     y: 96,
     label: "Parking Area",
-    description: "Park cars along this of the road opposite the driveway"
+    description: "Park cars along this of the road opposite the driveway",
   },
-   {
+  {
     id: "driveway",
     x: 57,
     y: 86,
     label: "Driveway",
-    description: "Walk on down the driveway to the house"
+    description: "Walk on down the driveway to the house",
   },
   {
     id: "Bathroom",
     x: 67,
     y: 47,
     label: "Bathroom",
-    description: "Fancy Bathrooms!"
+    description: "Fancy Bathrooms!",
   },
   {
     id: "house",
     x: 84,
     y: 45,
     label: "Our House",
-    description: "If you have camping gear, you can leave the gear here during the ceromony. We'll also have a bugspray station"
+    description:
+      "If you have camping gear, you can leave the gear here during the ceromony. We'll also have a bugspray station",
   },
   {
     id: "ceremony",
     x: 53,
     y: 18,
     label: "Ceremony Field",
-    description: "Meet here at 2pm for the ceremony"
-  }
+    description: "Meet here at 2pm for the ceremony",
+  },
 ];
 
 export default function WeddingMap() {
