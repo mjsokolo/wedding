@@ -1,56 +1,28 @@
-export default function Header({
-  active,
-  onNavigate,
-  showRsvpLabel = false,
-  onRsvpClick
-}) {
+import { NavLink } from "react-router-dom";
+
+export default function Header() {
   return (
     <header className="flex flex-col items-center gap-4 text-center">
       <nav className="flex flex-wrap items-center justify-center gap-3 font-sans text-sm text-[#4b5f41]">
-        <button
-          className="underline underline-offset-4"
-          type="button"
-          onClick={() => onNavigate("landing")}
-          aria-current={active === "landing" ? "page" : undefined}
-        >
+        <NavLink className="underline underline-offset-4" to="/" end>
           Home
-        </button>
+        </NavLink>
         <span className="text-[#c4a54a]">•</span>
-        {/* <button
-          className="underline underline-offset-4"
-          type="button"
-          onClick={() => onNavigate("directions")}
-          aria-current={active === "directions" ? "page" : undefined}
-        >
-          Directions
-        </button> */}
-        {/* <span className="text-[#c9b9a8]">•</span>
-        <button
-          className="underline underline-offset-4"
-          type="button"
-          onClick={() => onNavigate("gifts")}
-          aria-current={active === "gifts" ? "page" : undefined}
-        >
+        <NavLink className="underline underline-offset-4" to="/directions">
+          Directions &amp; Parking
+        </NavLink>
+        <span className="text-[#c4a54a]">•</span>
+        <NavLink className="underline underline-offset-4" to="/what-to-expect">
+          What to Expect
+        </NavLink>
+        <span className="text-[#c4a54a]">•</span>
+        {/* <NavLink className="underline underline-offset-4" to="/gifts">
           Gifts
-        </button>
+        </NavLink>
         <span className="text-[#c9b9a8]">•</span> */}
-        {/* <button
-          className="underline underline-offset-4"
-          type="button"
-          onClick={() => onNavigate("parking")}
-          aria-current={active === "parking" ? "page" : undefined}
-        >
-          Parking
-        </button>
-        <span className="text-[#c9b9a8]">•</span> */}
-        <button
-          className="underline underline-offset-4"
-          type="button"
-          onClick={onRsvpClick}
-          aria-current={active === "rsvp" ? "page" : undefined}
-        >
+        <NavLink className="underline underline-offset-4" to="/rsvp">
           RSVP
-        </button>
+        </NavLink>
       </nav>
     </header>
   );
