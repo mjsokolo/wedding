@@ -48,8 +48,22 @@ export default function WhatToExpectPage() {
           </h3>
           <p className="mt-2">
             Yes! If you can let us know in advance, that would be great, or just
-            let us know the day of. We will have someone to re-park your car or we'll set
-            aside space closer to the house where you can park.
+            let us know the day of. We will have someone to re-park your car or
+            we'll set aside space closer to the house where you can park.
+          </p>
+        </section>
+        <section>
+          <h3 className="font-serif text-xl">
+            What&apos;s being served for reception?
+          </h3>
+          <p className="mt-2">
+            We will have a Middle Eastern-style buffet catered by one of our
+            favorite local restaurants, Asma&apos;s Kitchen: shawarma, rice, and
+            salad, with vegetarian options available. We&apos;ll provide bottled
+            and canned alcoholic and soft drinks, as well as some special
+            self-serve cocktails crafted by our good friend Joe. Late night
+            grilling will include chicken, grilled vegetables, vegetarian
+            sausages, and hamburgers/hotdogs.
           </p>
         </section>
         <section>
@@ -72,13 +86,19 @@ export default function WhatToExpectPage() {
           <h3 className="font-serif text-xl">How else should I prepare?</h3>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
-              This is an outdoor wedding. If there&apos;s rain, we will have
-              the ceremony in the reception tent, but it would still be wise to bring an
-              umbrella and rain coat just in case.
+              This is an outdoor wedding. If there&apos;s rain, we will have the
+              ceremony in the reception tent, but it would still be wise to
+              bring an umbrella and rain coat just in case.
             </li>
             <li>We will provide bug spray and sunblock if you need it!</li>
-            <li>If you're staying for late night chilling or camping, bring a comfortable camp chair and tent.</li>
-            <li>You're welcome to bring late-night drinks & snacks, instruments, and games to share with folks around the campfire.</li>
+            <li>
+              If you're staying for late night chilling or camping, bring a
+              comfortable camp chair and tent.
+            </li>
+            <li>
+              You're welcome to bring late-night drinks & snacks, instruments,
+              and games to share with folks around the campfire.
+            </li>
           </ul>
         </section>
         <section>
@@ -87,7 +107,8 @@ export default function WhatToExpectPage() {
           </h3>
           <p className="mt-2">
             We&apos;ll have fancy portable bathrooms with running water and
-            electricity! They will be available to folks for the whole day and those brave enough to camp overnight.
+            electricity! They will be available to folks for the whole day and
+            those brave enough to camp overnight.
           </p>
           <div className="mx-auto mt-4 grid max-w-md grid-cols-2 gap-4">
             <img
