@@ -106,7 +106,7 @@ export default function WhatToExpectPage() {
           <h3 className="font-serif text-xl">What about Gifts or Registry?</h3>
           <p className="mt-2">
             No gifts or registry for this event, just bring you! If you really
-            want to, you can bring a drinks, lawn games, snacks, or smores
+            want to, you can bring drinks, lawn games, snacks, or smores
             material for the campfire and hanging out after the main event,
             although there will be plenty of drinks and grilled food too.
           </p>

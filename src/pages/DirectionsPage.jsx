@@ -7,7 +7,7 @@ export default function DirectionsPage() {
     <InfoPage title="Directions & Parking">
       <div className="grid gap-8">
         <section>
-          <h3 className="font-serif text-xl">Getting There</h3>
+          <h3 className="font-serif text-xl">Getting Here</h3>
           <p className="mt-2">
             The wedding will take place at our home at{" "}
             <b>241 Barnard Road, Shelburne Falls, MA 01370</b>. After driving on
