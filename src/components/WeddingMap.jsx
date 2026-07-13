@@ -50,7 +50,7 @@ const PINS = [
 
 export default function WeddingMap() {
   return (
-    <div className="relative mx-auto mt-4 w-full max-w-2xl">
+    <div id="venue-map" className="relative mx-auto mt-4 w-full max-w-2xl">
       <img
         src={weddingMap}
         alt="Map of the venue grounds showing parking, the ceremony spot, and other points of interest"

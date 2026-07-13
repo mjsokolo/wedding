@@ -42,33 +42,14 @@ export default function LandingPage() {
           </li>
           <li className="flex items-baseline gap-3">
             <strong className="min-w-[90px] font-semibold">Afterwards</strong>
-            Hang out, Music, and Lawn Games
-            the night
+            Hang out, Lawn Games & Music
           </li>
           <li className="flex items-baseline gap-3">
             <strong className="min-w-[90px] font-semibold">6pm</strong>
-            Grilling, Chilling, and Camping
+            Grilling, Chilling & Camping
           </li>
         </ul>
       </section>
-      {/* <section className="mt-4 w-full rounded-[18px] bg-[#fff3e7] px-6 py-5 text-left font-sans">
-        <h2 className="mb-3 text-sm uppercase tracking-[0.12em] text-[#7b4e3a]">
-          Gifts
-        </h2>
-        <p className="text-base text-[#2d2520]">
-          In lieu of gifts, please make a donation to the Center for New
-          Americans at{" "}
-          <a
-            href="https://cnam.org/"
-            target="_blank"
-            rel="noreferrer"
-            className="font-semibold text-[#7b4e3a] underline underline-offset-4"
-          >
-            cnam.org
-          </a>
-          .
-        </p>
-      </section> */}
       <p className="text-sm text-[#5e6855]">More details coming soon.</p>
     </main>
   );
